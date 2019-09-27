@@ -26,7 +26,7 @@ const context = {
       },
       {
         image: './assets/images/crystalCollect.png',
-        demoLink: 'https://edwardfarris.github.io/unit-4-game/',
+        demoLink: 'https://edwardfarris.github.io/crystal-collector/',
         name: 'Crystal Collector',
         description: "A classic guessing game where users are shown a random number to match each round. There are 4 different crystals, each randomly assigned a different hidden value. Crystals are clicked, which add that crystals value to player's total score. Matching the randomly generated number results in a win. If players total score goes over the target number, gameplay is reset, new crystal values are assigned and the game restarts.",
         techUsed: 'HTML, CSS, Google-Fonts, JavaScript',

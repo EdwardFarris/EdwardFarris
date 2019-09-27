@@ -46,7 +46,7 @@ h3 {
   
 h1 {
     padding-bottom: 45px;
-    font-size: 4.5em;
+    font-size: 3.5em;
     line-height: 49px;
     border-bottom: 4px solid #17a2b8;
     margin-top: 45px;
@@ -75,17 +75,6 @@ p {
     background: rgba(204, 204, 204, 0.6);
     border: 8px solid #17a2b8;
     text-align: center;
-}
-
-.containerAbout {
-    position: relative;
-    top: 5px;
-    width: 80%;
-    max-width: 960px;
-    margin: 0 auto;
-    background: rgba(204, 204, 204, 0.6);
-    border: 8px solid #17a2b8;
-    text-align: left;
 }
 
 /* Portfolio Page */
@@ -205,6 +194,17 @@ div.gitHub  {
 }
 
 /* About Me Page */
+.containerAbout {
+    position: relative;
+    top: 5px;
+    width: 80%;
+    max-width: 960px;
+    margin: 0 auto;
+    background: rgba(204, 204, 204, 0.6);
+    border: 8px solid #17a2b8;
+    text-align: left;
+}
+
 #headshot {
     float: left;
     border: 8px solid #17a2b8;
@@ -221,10 +221,10 @@ div.gitHub  {
     line-height: 38px;
 }
 
-#h1About {
-    padding-left: 0px;
-    margin-left: 0px;
-    font-size: 60px;
+#h1About, #h1Contact{
+    padding: 40px 0;
+    margin: 20px 0;
+    font-size: 3em;
 }
   
 /* Header and Navbar */
@@ -260,28 +260,25 @@ div.gitHub  {
     background: #039bf9;
   }
 
-.navbox {
-    width: 100%;
-    margin: 0;
-    background: #666;
-    color: #efefef;
-    height: 100px;
+
+ul.navLinks {
+    position: relative;
+    right: 10%;
+    bottom: 45%;
+    text-align: right;
+   
 }
 
-div.navbar1 {
-    position: relative;
-    display: inline-block;
-    left: 150px;
-    text-align: center;
-    width: 60%;
-    background: #666;
+li.navbar1 {
+    display: inline;
+    background-color: #666;
     padding: 10px 0;
 }
   
 .navbar1 a{
     margin-top: 0px;
     padding-left: 15px;
-    margin-left: 100px;
+    margin-left: 10px;
     margin-right: 10px;
     color: #efefef;
     text-decoration: none;
@@ -293,17 +290,6 @@ div.navbar1 {
 
 .navbar1 a:hover {
     color: #17a2b8;
-}
-
-/* main */
-.pics {
-    width: 100%;
-    height: 260px;
-    border: 4px solid #17a2b8;
-    margin-right: 10px;
-    margin-left: 0px;
-    margin-top: 10px;
-    margin-bottom: -50px;
 }
   
 /* contact page */
@@ -349,19 +335,15 @@ div.navbar1 {
     text-shadow: -4px 4px rgb(24, 24, 24)
 }
 
-#connect {
-    text-align: center;
-    padding-bottom: 5px;
-    margin-bottom: 5px;
-}
-
-.connect {
-    font-size: 2.6;
-    text-shadow: -2px 2px white;
+.connectionTitle {
+    font-size: 2em;
+    color: rgb(24, 24, 24);
+    text-shadow: -3px 2px #17a2b8;
+    font-family: 'Oxygen', sans-serif;
 }
 
 .connectionLabel {
-    font-size: 2.5em;
+    font-size: 1.2em;
     color: rgb(24, 24, 24);
     text-shadow: -3px 2px #17a2b8;
     font-family: 'Oxygen', sans-serif;
