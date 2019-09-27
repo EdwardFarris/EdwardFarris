@@ -7,147 +7,90 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
         integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css?family=Anton|Oswald|Oxygen&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/2.0.0/handlebars.js"></script>
+    <script id="templateHB" type="text/x-handlebars-template">
+<div class="row">
+    {{#each this.projects}}
+    <div class="col-md-6 col-sm-12">
+        <article class="project">
+          <a href={{this.demoLink}} target="_blank"><img class="image" src={{this.image}} alt={{this.name}}></a>
+          <div class="name">{{this.name}}</div>
+          <section class="details">
+            <div class="description">
+                <h4 class="boldUnder">Description:</h4>
+                <p >{{this.description}}</p>
+            </div>
+            <div class="techUsed">
+                <h4 class="boldUnder">Technologies Utilized:</h4>
+                <p>{{this.techUsed}}</p>
+            </div>
+            <div class="gitHub">
+                <h4 class="boldUnder">GitHub Code:</h4>
+                <a href={{this.gitHub}} target="_blank">{{this.gitHub}}</a>
+            </div>
+          </section>
+        </article>
+        <br>
+    </div>
+    {{/each}}
+</div>
+</script>
 </head>
 
 <body>
-
     <header id="masthead">
-        <div class="navbox">
-            <a href="index.html" id="logo">Edward Farris</a>
-            <nav class="navbar navbar-light">
-                <a href="aboutme.html">About Me</a>
-                <a href="portfolio.html">Portfolio</a>
-                <a href="contact.html">Contact</a>
-            </nav>
+        <a href="index.html" id="logo">Edward Farris</a>
+        <div class="navbar1">
+            <a href="aboutme.html">About Me</a>
+            <a href="portfolio.html">Portfolio</a>
+            <a href="contact.html">Contact</a>
         </div>
     </header>
 
     <div id="main-container">
         <div class="containerPortfolio">
-
             <div class="row">
                 <div class="col">
                     <h1 id="portLabel">Recent Projects</h1>
+                    <h5>Click images to see deployed projects in action!</h5>
                 </div>
             </div>
+            <!-- New container layout -->
+            <div id='information'>
 
-            <div class="row">
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/RainbowKittenSurpriseFanPage/" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/fanpage.png" alt="Artist Fan Page">
-                        <h3 id="piclabels">Artist Fan Page</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/SirIsaacTribute/" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/isaac.png" alt="Isaac Newton Tribute Page">
-                        <h3 id="piclabels">Isaac Newton Tribute</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 picbox">
-                    <a href="https://edwardfarris.github.io/Word-Guess-Game/" target="_blank"
-                        title="click here to go to game!">
-                        <img class="pics social" src="assets/images/hangman.png" alt="Hangman">
-                        <h3 id="piclabels">Word-Guess Game</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6 picbox">
-                    <a href="https://edwardfarris.github.io/TriviaGame/" target="_blank"
-                        title="click here to go to game!">
-                        <img class="pics social" src="assets/images/gotTrivia.png" alt="Trivia Game" id="jonSnow">
-                        <h3 id="piclabels">Trivia Game</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/RockPaperScissors/" target="_blank"
-                        title="click here to go to game!">
-                        <img class="pics social" src="assets/images/RPS2.png" alt="Rock Paper Scissors">
-                        <h3 id="piclabels">Rock Paper Scissors</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/unit-4-game/" target="_blank"
-                        title="click here to go to game!">
-                        <img class="pics social" src="assets/images/crystalCollect.png" alt="Crystal Collector Game">
-                        <h3 id="piclabels">Crystal Collector Game</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/GIPHY-API/" target="_blank"
-                        title="click here to go to game!">
-                        <img class="pics social" src="assets/images/music.jpg" alt="GIPH-Tastic">
-                        <h3 id="piclabels">GIPH App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/Firebase-Train-Scheduler/" target="_blank"
-                        title="click here to go to scheduler!">
-                        <img class="pics social" src="assets/images/train.jpeg" alt="Firebase-Train-Scheduler">
-                        <h3 id="piclabels">Train Scheduler</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://edwardfarris.github.io/liri-node-app/" target="_blank"
-                        title="click here to go app ReadMe!">
-                        <img class="pics social" src="assets/images/spotify.png" alt="Liri-node-app">
-                        <h3 id="piclabels">Liri-node-app</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://github.com/EdwardFarris/Bamazon-App" target="_blank"
-                        title="Click here to go to app description!">
-                        <img class="pics social" src="assets/images/cart.jpeg" alt="Bamazon App">
-                        <h3 id="piclabels">Bamazon App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://immense-woodland-16973.herokuapp.com/" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/friends.jpeg" alt="FriendFinder App">
-                        <h3 id="piclabels">FriendFinder App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://floating-taiga-13510.herokuapp.com/" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/remove.png" alt="Burger Builder App">
-                        <h3 id="piclabels">Burger Builder App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://quiet-ocean-10458.herokuapp.com/" target="_blank" title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/burger.jpg" alt="Sequelize Burger App">
-                        <h3 id="piclabels">SequelizeBurger App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://github.com/cummingsbeau/projectone" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/demo.png" alt="DogDash App!">
-                        <h3 id="piclabels">DogDash App</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <a href="https://tranquil-stream-41866.herokuapp.com/" target="_blank"
-                        title="Click here to go to app!">
-                        <img class="pics social" src="assets/images/marvel.jpg" alt="Marvel CLicky Game">
-                        <h3 id="piclabels">Marvel Clicky Game</h3>
-                    </a>
-                </div>
-                <div class="col-sm-12 col-md-6">
-                    <img class="pics social" src="assets/images/construction.jpg" alt="Project Under Construction!">
-                    <h3 id="piclabels">Coming Soon!!!</h3>
-                </div>
             </div>
-        </div>
+            <!-- References to old projects with heroku deployments -->
 
-        <footer>
-            Copyright &copy;
-        </footer>
+            <!-- <div class="col-sm-12 col-md-6">
+                <a href="https://immense-woodland-16973.herokuapp.com/" target="_blank"
+                    title="Click here to go to app!">
+                    <img class="pics social" src="assets/images/friends.jpeg" alt="FriendFinder App">
+                    <h3 id="piclabels">FriendFinder App</h3>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="https://floating-taiga-13510.herokuapp.com/" target="_blank" title="Click here to go to app!">
+                    <img class="pics social" src="assets/images/remove.png" alt="Burger Builder App">
+                    <h3 id="piclabels">Burger Builder App</h3>
+                </a>
+            </div>
+            <div class="col-sm-12 col-md-6">
+                <a href="https://quiet-ocean-10458.herokuapp.com/" target="_blank" title="Click here to go to app!">
+                    <img class="pics social" src="assets/images/burger.jpg" alt="Sequelize Burger App">
+                    <h3 id="piclabels">SequelizeBurger App</h3>
+                </a>
+            </div> -->
 
+            <!-- Placeholder Div for works in progress -->
+            <!-- <div class="col-sm-12 col-md-6">
+                <img class="pics social" src="assets/images/construction.jpg" alt="Project Under Construction!">
+                <h3 id="piclabels">Coming Soon!!!</h3>
+            </div> -->
+            <footer>
+                Copyright &copy;
+            </footer>
+            <script src="./main.js"></script>
 </body>
 
 </html>

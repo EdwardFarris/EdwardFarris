@@ -1,31 +1,18 @@
 /* font-family: 'Oswald', sans-serif;
 font-family: 'Oxygen', sans-serif;
 font-family: 'Anton', sans-serif; */
-
-body {
+body, html {
     font-family: 'Oxygen', sans-serif;
-    font-size: 18px;
+    font-size: 1.2em;
     line-height: 34px;
     color: #777;
-    }
-  
-#jonSnow { 
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    }
-
-#logo:hover {
-  background: #5e7f7e;
 }
-
-
-  * {
+  
+* {
     box-sizing: border-box;
-    }
+}
   
-  /* general */
-  
+/* general */
 #main-container {
     background: url("../images/road.jpg");
     background-position: center;
@@ -40,14 +27,44 @@ body {
     padding-bottom: 180px;
     margin-bottom: 0px;
 }
+
+h1,
+h2,
+h3,
+p {
+    font-family: 'Oxygen', sans-serif;
+    margin-bottom: 10px;
+}
   
-.navbox {
-    width: 100%;
-    max-width: 960px;
-    margin: 0 auto;
-    background: #ffffff;
+h1,
+h2,
+h3 {
+    font-family: 'Oxygen', sans-serif;
+    font-weight: 700;
+    color: #17a2b8;
+}
+  
+h1 {
+    padding-bottom: 45px;
+    font-size: 4.5em;
+    line-height: 49px;
+    border-bottom: 4px solid #17a2b8;
+    margin-top: 45px;
+    margin-bottom: 25px;
+    text-shadow: -3px 2px rgb(24, 24, 24);
+}
+  
+h2,
+h3 {
+    font-size: 1.5em;
 }
 
+p {
+    font-size: 1.2em;
+    color: rgb(24, 24, 24);
+    line-height: 60px;
+}
+  
 .container {
     position: relative;
     top: 5px;
@@ -71,33 +88,123 @@ body {
     text-align: left;
 }
 
+/* Portfolio Page */
 .containerPortfolio {
     position: relative;
     top: 5px;
-    width: 80%;
-    max-width: 960px;
+    width: 95%;
     height: auto;
     margin: 0 auto;
     background: rgba(204, 204, 204, 0.6);
     border: 8px solid #17a2b8;
     text-align: center;
-    padding-left: 10px;
-    padding-right: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
 }
 
-.containerContact {
-    position: relative;
-    top: 5px;
-    width: 80%;
-    max-width: 960px;
-    height: auto;
-    margin: 0 auto;
-    background: rgba(204, 204, 204, 0.6);
+.project {
     border: 8px solid #17a2b8;
-    text-align: center;
-   
+    width: 100%;
+    margin: 0 auto;
+    height: 675px;
+    padding-bottom: 20px;
 }
-  
+
+.image {
+    width: 100%;
+    margin: 0 auto;
+    display: cover;
+    height: 52%;
+}
+
+.image:hover {
+    cursor: pointer;
+    opacity: 0.6;
+}
+
+.name {
+    position: relative;
+    bottom: 76px;
+    left: 0;
+    width: 100%;
+    background-color: rgba(23,162,184,.8);
+    color: rgb(24, 24, 24);
+    margin: 0 auto;
+    padding: 20px 0;
+    font-size: 1.8em;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    text-shadow: -2px 2px #efefef;
+    font-family: 'Oxygen', sans-serif;
+    border: 2px solid #666;
+}
+
+.details {
+    position: relative;
+    bottom: 76px;
+    left:0;
+    display: flex;
+    width: 100%;
+    height: 51%;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 auto;
+    padding: 5px;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.boldUnder {
+    text-decoration: underline;
+    font-weight: bold;
+    color: rgb(24, 24, 24);
+    text-shadow: -2px 1px #17a2b8;
+    font-size: 1.1em;
+    margin-bottom: 2px;
+}
+
+div.description {
+    overflow: auto;
+    height: 58%;
+}
+
+div.techUsed {
+    height: 22%;
+    margin-bottom: 2px;
+}
+
+div.gitHub  {
+    height: 20%;
+    margin-bottom: 2px;
+}
+
+.description p {
+    font-size: .9em;
+    color: rgb(24, 24, 24);
+    line-height: 25px; 
+    margin-bottom: 2px;
+    text-align: left;
+}
+
+.techUsed p {
+    font-size: .9em;
+    color: rgb(24, 24, 24);
+    line-height: 45px; 
+    margin-bottom: 2px;
+}
+
+.gitHub a {
+    font-size: .9em;
+    color: rgb(24, 24, 24);
+}
+
+.gitHub a:hover {
+    color: #17a2b8;
+    cursor: pointer;
+}
+
+/* About Me Page */
 #headshot {
     float: left;
     border: 8px solid #17a2b8;
@@ -105,46 +212,9 @@ body {
     height: auto;
     margin: 35px   
 }
-  
-h1,
-h2,
-h3,
-p {
-    font-family: 'Oxygen', sans-serif;
-    margin-bottom: 10px;
-    
-}
-  
-h1,
-h2,
-h3 {
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    color: #17a2b8;
-}
-  
-h1 {
-    padding-bottom: 20px;
-    font-size: 65px;
-    line-height: 49px;
-    border-bottom: 4px solid #17a2b8;
-    margin-top: 15px;
-    text-shadow: -2px 2px rgb(24, 24, 24);
-}
-  
-h2,
-h3 {
-    font-size: 22px;
-}
-
-p {
-    font-size: 44px;
-    color: rgb(24, 24, 24);
-    line-height: 60px;
-}
 
 .aboutP {
-    font-size:30px;
+    font-size: 1.4em;
     color: rgb(24, 24, 24);
     margin-left: 15px;
     margin-right: 15px;
@@ -157,104 +227,75 @@ p {
     font-size: 60px;
 }
   
-  /* header */
-  
+/* Header and Navbar */
 #masthead {
     position: fixed;
-    z-index: 99;
+    z-index: 2;
     width: 100%;
-    height: 100px;
+    height: 110px;
     margin: 0px;
-    overflow: auto;
     color: #fff;
     background: #666;
-    /* background: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     border-bottom: 8px solid #17a2b8;
 }
   
 #logo {
     position: relative; 
-    left: -216px;
-    top: 10px;
+    left: 120px;
+    top: 11px;
     width: 250px;
-    height: 90px;
     font-family: 'Oswald', sans-serif;
     text-shadow: -3px 3px rgb(24, 24, 24);
-    font-size: 70px;
+    font-size: 3em;
     font-weight: 700;
-    line-height: 70px;
+    line-height: 82px;
     color: #fff;
     text-align: center;
     text-decoration: none;
-    background: #17a2b8;
-    margin-left: 20px;
-    padding-left: 10px;
-    padding-right: 10px;
-    padding-bottom: 0px;
+    background-color: #17a2b8;
+    padding: 1px 30px 0 30px;
 }
+
+#logo:hover {
+    background: #039bf9;
+  }
 
 .navbox {
+    width: 100%;
+    margin: 0;
     background: #666;
-    /* background: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
     color: #efefef;
+    height: 100px;
 }
 
-.navbar {
+div.navbar1 {
     position: relative;
-    top: -62px;
-    left: 295px;
+    display: inline-block;
+    left: 150px;
+    text-align: center;
+    width: 60%;
     background: #666;
-    /* background: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
+    padding: 10px 0;
 }
   
-.navbar a{
+.navbar1 a{
     margin-top: 0px;
     padding-left: 15px;
-    margin-left: 15px;
-    line-height: 45px;
+    margin-left: 100px;
+    margin-right: 10px;
     color: #efefef;
     text-decoration: none;
     border-left: 3px solid #17a2b8;
     font-weight: bold;
-    font-size: 40px;
+    font-size: 1.4em;
     text-shadow: -2px 2px rgb(24, 24, 24);
 }
 
-nav a:hover {
-    color: #5e7f7e;
+.navbar1 a:hover {
+    color: #17a2b8;
 }
 
-    /* footer */
-  
-footer {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    font-family: 'Oxygen', sans-serif;
-    width: 100%;
-    font-size: 12px;
-    color: #ccc;
-    text-align: center;
-    background: #666;
-    /* background: url("../images/wood.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover; */
-    border-top: 8px solid #17a2b8;
-    height: 85px;
-}
-
-  /* main */
-  
+/* main */
 .pics {
     width: 100%;
     height: 260px;
@@ -264,64 +305,20 @@ footer {
     margin-top: 10px;
     margin-bottom: -50px;
 }
-
-#portLabel {
-    color: #17a2b8;
-    font-family: 'Oxygen', sans-serif;
-    font-weight: 700;
-    margin-top: 15px;
-}
   
-  /* portfolio page */
-  
-#piclabels {
-    font-family: 'Oxygen', sans-serif;
-    font-size: 40px;
-    text-shadow: -2px 2px #efefef;
+/* contact page */
+.containerContact {
     position: relative;
-    bottom: 12px;
-    left: 1px;
-    width: 99%;
-    padding: 15px 5px 15px 5px;
-    margin-left: 1px;
-    font-weight: 300;
-    line-height: 30px;
-    color: rgb(24, 24, 24);;
+    top: 5px;
+    width: 80%;
+    max-width: 960px;
+    height: auto;
+    margin: 0 auto;
+    background: rgba(204, 204, 204, 0.6);
+    border: 8px solid #17a2b8;
     text-align: center;
-    background: #17a2b8;
-    border-bottom: 0;
-    opacity: 0.9;
 }
 
-.social:hover {
-    cursor: pointer;
-    opacity: 0.7;
-}
-  
-.row{
-    padding-top: 0px;
-    padding-bottom: 0px; 
-    margin-top: 0px;
-    margin-bottom: 0px;
-}
- 
-    /* contact page */
-
-.bttnRow {
-    margin-left: 0px;
-    text-align: center;
-    margin-top: 5px;
-    padding: 20px;
-}
-
-button {
-    font-size: 30px;
-}
-
-.btn-primary:hover {
-    background: #5e7f7e;
-}
-  
 .fa-linkedin {
     font-size: 175px;
     padding-bottom: 15px;
@@ -359,28 +356,29 @@ button {
 }
 
 .connect {
-    font-size: 50px;
+    font-size: 2.6;
     text-shadow: -2px 2px white;
 }
 
 .connectionLabel {
-    font-size: 45px;
+    font-size: 2.5em;
     color: rgb(24, 24, 24);
     text-shadow: -3px 2px #17a2b8;
     font-family: 'Oxygen', sans-serif;
 }
 
-#hire {
-    padding: 5px;
-    margin-top: 65px;
-    color: #efefef;
+/*Home Page: Skill Icons and labels */
+#brandP {
+    margin-top: 10px;
+    font-size: 2.4em;
     font-family: 'Oxygen', sans-serif;
+    text-shadow: -2px 1px #17a2b8;
 }
 
-/*Skill Icons and labels */
 .skillLabel {
-    font-size: 35px;
+    font-size: 2em;
     text-shadow: -3px 2px rgb(24, 24, 24);
+    margin-bottom: 50px;
 }
 
 .fa-html5 {
@@ -417,4 +415,24 @@ color: #17a2b8;
     padding: 0px;
     text-shadow: -3px 2px rgb(24, 24, 24);
     color: #17a2b8;
+}
+
+/* footer */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    background: #666;
+    border-top: 8px solid #17a2b8;
+    height: 6%;
+}
+
+h4.footerText {
+    font-family: 'Oxygen', sans-serif;
+    color: #efefef;
+    font-size: 1.2em;
+    padding-top: 4px;
+    text-shadow: -2px 2px #17a2b8;
 }
