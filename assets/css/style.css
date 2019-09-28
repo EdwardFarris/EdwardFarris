@@ -13,7 +13,7 @@ body, html {
 }
   
 /* general */
-#main-container {
+.main-container {
     background: url("../images/road.jpg");
     background-position: center;
     background-repeat: no-repeat;
@@ -67,7 +67,7 @@ p {
   
 .container {
     position: relative;
-    top: 45px;
+    top: 70px;
     width: 80%;
     max-width: 960px;
     height: auto;
@@ -80,7 +80,7 @@ p {
 /* Portfolio Page */
 .containerPortfolio {
     position: relative;
-    top: 5px;
+    top: 70px;
     width: 95%;
     height: auto;
     margin: 0 auto;
@@ -97,6 +97,15 @@ p {
     margin: 0 auto;
     height: 675px;
     padding-bottom: 20px;
+}
+
+#mainPortTitle {
+font-size: 3.5em;
+margin-bottom: 10px;
+}
+
+#mainPortClick {
+padding-bottom: 6px;
 }
 
 .image {
@@ -149,7 +158,7 @@ p {
     font-weight: bold;
     color: rgb(24, 24, 24);
     text-shadow: -2px 1px #17a2b8;
-    font-size: 1.1em;
+    font-size: 1em;
     margin-bottom: 2px;
 }
 
@@ -168,11 +177,11 @@ div.gitHub  {
     margin-bottom: 2px;
 }
 
-.description p {
-    font-size: .9em;
+.description p  {
+    font-size: .8em;
     color: rgb(24, 24, 24);
     line-height: 25px; 
-    margin-bottom: 2px;
+    margin: 0 4px 2px 4px;
     text-align: left;
 }
 
@@ -183,9 +192,12 @@ div.gitHub  {
     margin-bottom: 2px;
 }
 
+
+
 .gitHub a {
-    font-size: .9em;
+    font-size: .8em;
     color: rgb(24, 24, 24);
+    
 }
 
 .gitHub a:hover {
@@ -196,13 +208,14 @@ div.gitHub  {
 /* About Me Page */
 .containerAbout {
     position: relative;
-    top: 5px;
+    top: 70px;
     width: 80%;
     max-width: 960px;
     margin: 0 auto;
     background: rgba(204, 204, 204, 0.6);
     border: 8px solid #17a2b8;
     text-align: left;
+    padding-bottom: 20px;
 }
 
 #headshot {
@@ -214,7 +227,7 @@ div.gitHub  {
 }
 
 .aboutP {
-    font-size: 1.4em;
+    font-size: 1.2em;
     color: rgb(24, 24, 24);
     margin-left: 15px;
     margin-right: 15px;
@@ -239,7 +252,7 @@ div.gitHub  {
     border-bottom: 8px solid #17a2b8;
 }
   
-#logo {
+.logo {
     position: absolute;
     display: inline;
     /* width: 24%; */
@@ -265,8 +278,9 @@ div.gitHub  {
 #navBox {
     width: 50%;
     position: absolute;
-    left: 40%;
-    bottom: 20%;
+    left: 48%;
+    bottom: 30%;
+    
 }
 
 ul.navLinks {
@@ -296,7 +310,7 @@ li.navbar1:hover, a:hover {
 /* contact page */
 .containerContact {
     position: relative;
-    top: 5px;
+    top: 70px;
     width: 80%;
     max-width: 960px;
     height: auto;
@@ -344,7 +358,7 @@ li.navbar1:hover, a:hover {
 }
 
 .connectionLabel {
-    font-size: 1.2em;
+    font-size: 2em;
     color: rgb(24, 24, 24);
     text-shadow: -3px 2px #17a2b8;
     font-family: 'Oxygen', sans-serif;
@@ -412,23 +426,126 @@ footer {
     height: 6%;
 }
 
-h4.footerText {
+#footerText {
     font-family: 'Oxygen', sans-serif;
     color: #efefef;
     font-size: 1.2em;
-    padding-top: 4px;
-    text-shadow: -2px 2px #17a2b8;
+    padding-top: 10px;
+    text-shadow: -2px 2px rgb(24, 24, 24);
 }
 
-@media only screen and (min-width: 960px) {
+@media only screen and (max-width: 1225px) {
     li.navbar1 {
         display: block;
     }
 
+    .containerAbout {
+        top: 145px;
+        height: auto;
+        width: 90%;
+    }
+
+    #headshot {
+        width: 280px;
+        margin: 15px;
+        position: relative;
+        top: 10px
+    }
+
+    .logo {
+        left: 100px;
+    }
+
+    #logoAbout {
+        left: 60px;
+    }
+
+    #logoPort {
+        left: 32px;
+    }
+
     #navBox {
-        
         position: absolute;
         left: 65%;
         bottom: 6%;
+    }
+
+    .skillLabel {
+        font-size: 1.5em;
+    }
+
+    #h1About {
+        font-size: 2.8em;
+        line-height: 75px;
+        padding: 0 5px 15px 0;
+    }
+
+    .aboutP {
+        line-height: 41px;
+        font-size: 1.5em;
+    }
+
+    .boldUnder {
+        font-size: 1.2em;
+    }
+
+    .description p {
+        font-size: 1.1em;
+        line-height: 27px;
+    }
+
+    .techUsed p {
+        font-size: 1.2em;
+    }
+
+    .gitHub a {
+        font-size: 1.2em;
+    }
+
+    #mainPortTitle {
+        font-size: 2.5em;
+        margin: 10px 0 10px 0;
+        padding-bottom: 20px;
+        }
+        
+    #mainPortClick {
+        display: none;
+        }
+
+    #mainPortContainer {
+        background: rgb(160, 158, 158);
+    }
+
+    .col-sm-12 {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+
+    .project {
+        height: 850px;
+        padding-bottom: 45px;
+    }
+
+    .name {
+        font-size: 2.5em;
+        padding: 30px 0;
+        /* bottom: 110px; */
+    }
+
+    .containerContact {
+        top: 125px;
+    }
+
+    .connectionLabel {
+        font-size: 2em;
+    }
+
+    .container {
+        top: 225px;
+    }
+
+    #brandP {
+        line-height: 70px;
     }
 }

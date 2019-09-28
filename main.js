@@ -2,11 +2,11 @@ const context = {
     projects: [
       {
         image: './assets/images/fanpage.png',
-        demoLink: 'https://edwardfarris.github.io/RainbowKittenSurpriseFanPage/',
+        demoLink: 'https://edwardfarris.github.io/RKSFanPage/.',
         name: 'Artist Fan Page',
         description: 'A general informational webpage sharing details about a popular band. The page includes custom sized images with thoughtful positioning, band member names and roles, a short biograpgy paragraph, a few popular song titles, an embedded youtube music video, and a fully functional navigation bar with external resource links. Find concert tour dates, a full biography page, and more.',
         techUsed: 'HTML, CSS, Google-Fonts, Font-Awesome',
-        gitHub: 'https://github.com/EdwardFarris/RainbowKittenSurpriseFanPage'
+        gitHub: 'https://github.com/EdwardFarris/RKSFanPage'
       },
       {
         image: './assets/images/teaShop.png',
@@ -38,14 +38,14 @@ const context = {
         name: 'Form A Story',
         description: "A 'Mad Libs' style application meant for entertaining younger children and to help them learn. It allows them to input their own personalized verbs, adjectives, animals etc. and create their own customized fictional story. The app focuses on the proper use of HTML forms, including various input types and buttons, input validation and return values, using JavaScript logic in order to personally create a different story every time.",
         techUsed: 'HTML, CSS, JavaScript',
-        gitHub: 'https://github.com/EdwardFarris/RainbowKittenSurpriseFanPage'
+        gitHub: 'https://github.com/EdwardFarris/form-a-story'
       },
       {
         image: './assets/images/musiconHome.png',
         demoLink: 'https://edwardfarris.github.io/musicon-store/',
         name: 'MusiCon Store',
         description: "A virtual marketplace website allowing visitors to browse musical instruments for purchase. It uses JavaScript logic and Handlebars to dynamically update the price and information pertaining to specific items based on whether the listed items are on sale or not. Backend logic is not currently setup to actually make online purchases, but users can simply utilize the contact page in order to call/email the store to place orders.",
-        techUsed: 'HTML, CSS, Google-Fonts, JavaScript, Handlebars.js',
+        techUsed: 'HTML, CSS, JavaScript, Handlebars',
         gitHub: 'https://github.com/EdwardFarris/musicon-store'
       },
       {
@@ -54,14 +54,14 @@ const context = {
         name: 'Trivia Quiz',
         description: "A Game of Thrones themed quiz that prompts users to answer multiple choices questions in a limited amount of time. The page will then display the number of questions that were answered correctly and/or incorrectly. Average time given is about 10 seconds per question with 10 questions total. Features include the use of jQuery and JavaScript timer that changes the page dynamically when time runs out. Study up, Winter is coming!",
         techUsed: 'HTML, CSS, Google-Fonts, JavaScript, jQuery',
-        gitHub: 'https://github.com/EdwardFarris/RainbowKittenSurpriseFanPage'
+        gitHub: 'https://github.com/EdwardFarris/TriviaGame'
       },
       {
         image: './assets/images/demo.png',
         demoLink: ' https://edwardfarris.github.io/dog-dash-app/',
         name: 'Dog Dash App',
         description: "Built with a collaborative team, this application utilizes google maps and open weather map APIs! Simply enter a valid zip code and press submit! Dog Dash displays the addresses of any dog park locations within the specified zip code, as well as current weather conditions for that area. Future development plans would include showing the google-map with pinned locations.",
-        techUsed: 'HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX, APIs',
+        techUsed: 'HTML, CSS, Bootstrap, JavaScript, jQuery, AJAX',
         gitHub: 'https://github.com/EdwardFarris/dog-dash-app'
       },
       {
@@ -69,7 +69,7 @@ const context = {
         demoLink: 'https://tranquil-stream-41866.herokuapp.com/',
         name: 'Marvel Memory Game',
         description: "This app utilizes the explosive power of the React Js library. This allows the state of the components to be updated quickly and dynamically during gameplay. 12 images of marvel characters are displayed in a flex grid. When clicked, all images are immediately and randomly shuffled. Successfully click on all 12 Marvel characters without clicking the same character twice, and YOU WIN! Wins and losses are tracked and displayed. ",
-        techUsed: 'HTML, CSS, Google-Fonts, JavaScript, React Js, NPM, Heroku',
+        techUsed: 'HTML, CSS, JavaScript, React, NPM, Heroku',
         gitHub: 'https://github.com/EdwardFarris/clickygame'
       },
       {
