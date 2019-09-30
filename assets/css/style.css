@@ -48,7 +48,7 @@ h1 {
     padding-bottom: 45px;
     font-size: 3.5em;
     line-height: 49px;
-    border-bottom: 4px solid #17a2b8;
+    border-bottom: 4px solid rgb(245, 156, 0);
     margin-top: 45px;
     margin-bottom: 25px;
     text-shadow: -3px 2px rgb(24, 24, 24);
@@ -125,7 +125,7 @@ padding-bottom: 6px;
     bottom: 76px;
     left: 0;
     width: 100%;
-    background-color: rgba(23,162,184,.8);
+    background-color: rgba(23,162,184,.9);
     color: rgb(24, 24, 24);
     margin: 0 auto;
     padding: 20px 0;
@@ -135,7 +135,7 @@ padding-bottom: 6px;
     text-align: center;
     text-shadow: -2px 2px #efefef;
     font-family: 'Oxygen', sans-serif;
-    border: 2px solid #666;
+    border: 2px solid rgb(245, 156, 0);
 }
 
 .details {
@@ -243,6 +243,7 @@ div.gitHub  {
 /* Header and Navbar */
 #masthead {
     position: fixed;
+    overflow: hidden;
     z-index: 2;
     width: 100%;
     height: 162px;
@@ -250,7 +251,7 @@ div.gitHub  {
     color: #fff;
     background: #666;
     border-bottom: 8px solid #17a2b8;
-}
+    }
   
 .logo {
     position: absolute;
@@ -261,14 +262,17 @@ div.gitHub  {
     font-family: 'Oswald', sans-serif;
     text-shadow: -3px 3px rgb(24, 24, 24);
     font-size: 2.4em;
-    font-weight: 700;
+    font-weight: bold;
     line-height: 60px;
     color: #fff;
     text-align: center;
     text-decoration: none;
     background-color: #17a2b8;
-    padding: 50px 20px 50px 20px;
+    padding: 50px 20px 46px 20px;
     margin: 0 5px 0 0;
+    border-left: 2px solid rgb(245, 156, 0);
+    border-right: 2px solid rgb(245, 156, 0);
+    transition: 0.4s;
 }
 
 #logo:hover {
@@ -280,6 +284,7 @@ div.gitHub  {
     position: absolute;
     left: 48%;
     bottom: 30%;
+    transition: 0.4s;
     
 }
 
@@ -292,18 +297,23 @@ ul.navLinks {
 li.navbar1 {
     display: inline;
     background-color: #666;
-    margin: 10px 30px;
+    margin: 10px 25px;
     padding-left: 10px;
     color: #efefef;
     text-decoration: none;
-    border-left: 3px solid #17a2b8;
+    border-left: 3px solid rgb(245, 156, 0);
     font-weight: bold;
-    font-size: 1.4em;
+    font-size: 1.5em;
     text-shadow: -2px 2px rgb(24, 24, 24);
 }
   
 li.navbar1:hover, a:hover {
     color: #17a2b8;
+    text-decoration: none;
+}
+
+li.navbar1:active, a:active {
+    color: rgb(245, 156, 0);
     text-decoration: none;
 }
   
@@ -426,14 +436,7 @@ footer {
     height: 6%;
 }
 
-#footerText {
-    font-family: 'Oxygen', sans-serif;
-    color: #efefef;
-    font-size: 1.2em;
-    padding-top: 10px;
-    text-shadow: -2px 2px rgb(24, 24, 24);
-}
-
+/* Media query for small mobile phone screen sizes in portrait mode   */
 @media only screen and (max-width: 1225px) {
     li.navbar1 {
         display: block;
@@ -549,3 +552,45 @@ footer {
         line-height: 70px;
     }
 }
+
+@media only screen and (max-width: 1225px) and (orientation: landscape) {
+    #masthead {
+        height: 80px;
+    }
+
+    li.navbar1 {
+        display: inline;
+        margin: 10px 6px;
+        font-size: 1.2em;
+    }
+
+    .logo {
+        font-size: 1.8em;
+        padding: 4px 20px 8px 20px;
+    }
+
+    #navBox {
+        left: 51%;
+        bottom: 18%;
+    }
+
+    .container {
+        top: -27px;
+    }
+
+    .main-container {
+        padding-bottom: 50px;
+    }
+
+    .containerAbout {
+        top: -27px;
+    }
+
+    .containerPortfolio {
+        top: -27px;
+    }
+    
+    .containerContact {
+        top: -27px;
+    }
+  }

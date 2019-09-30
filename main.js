@@ -92,3 +92,6 @@ const context = {
   const compiledHtml = template(context);
   
   document.getElementById('information').innerHTML = compiledHtml;
+
+
+  
